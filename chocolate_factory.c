@@ -15,7 +15,7 @@ int chocolatecount = 0;
 void *chocolatemanufactured(void *cno)  //writer
 {   
     sem_wait(&choco);
-    cnt = cnt*2;
+    cnt = cnt*3;
     printf("Packet %d Chocolate Produced  %d\n",(*((int *)cno)),cnt);
     sem_post(&choco);
 
